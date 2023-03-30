@@ -312,7 +312,7 @@ void compass(int angle2)
     {
         compass(LCV_Y/LCV_X*(-1)*180/3.14);
     }
-}*/
+}
 int amotors()
     int baza us=7; 
     if (US_Left<=baza us || US_Right<=baze us || US_Front <=baza us - 1)
@@ -325,7 +325,7 @@ int amotors()
                 compass=ac+270;
         }
         }
-    }
+    }*/
 //_________________________________________________/GAME 0\__________________________________________________
 void Game0()
 { 
@@ -645,7 +645,7 @@ void Game1()
         Duration=3;
         CurAction=1;
     }
-    else if (PositionY<=20 && Compass>=270 && Compass<=90)
+    else if (PositionY<=10 && Compass>=270 || PositionY<=10 && Compass<=90)
     {
         Duration=3;
         CurAction=1;
@@ -657,7 +657,7 @@ void Game1()
     }
     else if(PositionY<=10  || PositionY>=260 || PositionX<=10  || PositionX>=340 && PositionX!=PositionY)
     {
-        Duration=2;
+        Duration=4;
         CurAction=4;
         Duration=2;
         CurAction=9;
